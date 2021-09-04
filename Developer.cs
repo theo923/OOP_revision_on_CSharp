@@ -1,0 +1,25 @@
+using System;
+public abstract class Developer
+{
+    protected string _firstname;
+    protected string _lastname;
+
+    protected string Fullname
+    {
+        get
+        {
+            return String.Format("{0} {1}", this._firstname, this._lastname);
+        }
+    }
+    public Developer(string firstname, string lastname)
+    {
+        this._firstname = firstname;
+        this._lastname = lastname;
+    }
+
+    public virtual void Code()
+    {
+        Console.WriteLine("I'm {0} {1}, A Developer", this._firstname, this._lastname);
+    }
+
+}
