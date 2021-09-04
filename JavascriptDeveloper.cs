@@ -1,6 +1,7 @@
 using System;
 namespace OOP
 {
+    //Inheritance - inherit class's characteristic to its child
     public class JavascriptDeveloper : Developer
     {
         public JavascriptDeveloper(string firstname, string lastname) : base(firstname, lastname)
